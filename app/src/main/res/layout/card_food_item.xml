@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="8dp"
+    android:elevation="20dp"
+    app:cardCornerRadius="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/posterView"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:maxLines="1"
+            android:textColor="#FF222831"
+            android:textSize="16sp"
+            app:fontFamily="@font/roboto_black"
+            app:layout_constraintStart_toEndOf="@+id/posterView"
+            app:layout_constraintTop_toTopOf="@+id/posterView"
+            tools:text="Ветчина и грибы" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/descriptionView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sf_ui_display"
+            android:maxLines="4"
+            android:textColor="#FFAAAAAD"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/titleView"
+            app:layout_constraintTop_toBottomOf="@+id/titleView"
+            tools:text="Ветчина,шампиньоны, увеличинная порция моцареллы, томатный соус" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/priceFromButton"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="100dp"
+            android:layout_height="37dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sf_ui_display"
+            android:textAllCaps="false"
+            android:textColor="#FFFD3A69"
+            android:textSize="13sp"
+            app:cornerRadius="6dp"
+            app:layout_constraintBottom_toBottomOf="@+id/posterView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:strokeColor="#FFFD3A69"
+            app:strokeWidth="1dp"
+            tools:text="от 345р" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

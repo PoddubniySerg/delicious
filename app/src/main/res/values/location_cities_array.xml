@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="location_cities_array">
+        <item>Москва</item>
+        <item>Брянск</item>
+        <item>Сочи</item>
+        <item>Новосибирск</item>
+        <item>Екатеринбург</item>
+        <item>Воронеж</item>
+        <item>Санкт-Петербург</item>
+    </string-array>
+</resources>
